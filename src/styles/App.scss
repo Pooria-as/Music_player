@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pointer{
+cursor: pointer
+}
+
+@import url("./_player.scss");
+@import url("./_song.scss");
+@import url("./_library.scss");
+@import url("./_nav.scss");
