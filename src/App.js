@@ -40,8 +40,9 @@ const App = () => {
     setSongInfo({ ...SongInfo, CurrenTime: e.target.value })
   }
   return (
-    <div>
+    <div> 
       <Nav isShowLibrary={isShowLibrary} setShowLibrary={setShowLibrary} />
+
       <Song CurrentSong={CurrentSong} />
       <Player
         Songs={Songs}
@@ -57,6 +58,7 @@ const App = () => {
       />
       <Library
         isShowLibrary={isShowLibrary}
+        setShowLibrary={setShowLibrary}
         setSongs={setSongs}
         CurrentSong={CurrentSong}
         isPlaying={isPlaying}
@@ -64,6 +66,7 @@ const App = () => {
         audioRef={audioRef}
         setCurrentSong={setCurrentSong}
       />
+
       <audio
         onTimeUpdate={onTimeUpdate}
         onLoadedMetadata={onTimeUpdate}

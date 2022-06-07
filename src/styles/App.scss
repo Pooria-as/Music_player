@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
-.pointer{
-cursor: pointer
+.pointer {
+  cursor: pointer;
 }
+
 
 @import url("./_player.scss");
 @import url("./_song.scss");
 @import url("./_library.scss");
 @import url("./_nav.scss");
+
+
+

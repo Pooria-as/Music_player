@@ -8,8 +8,11 @@
   transition: all 0.8s;
   transform: translateX(-340px);
   overflow: scroll;
+
   h2 {
-    margin: 2rem;
+    // margin: 10rem;
+    font-size: 1.8rem;
+    margin: 1.2rem;
   }
   &:hover {
     box-shadow: 5px 5px 20px;
@@ -18,9 +21,10 @@
 .Library-Container {
   transition: all 0.2s;
   display: flex;
+  text-align: center;
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   h2 {
     font-size: 1rem;
@@ -29,18 +33,10 @@
     width: 7vw;
     margin: 0.7rem;
   }
-  @media only screen and (max-width: 600px) {
-    h1 {
-      font-size: 1.1rem;
-    }
-    h2 {
-      font-size: 0.8rem;
-    }
-  }
+
   &:hover {
     background-color: rgb(162, 196, 244);
   }
-
 }
 
 .Library_des {
@@ -74,10 +70,39 @@
   border-radius: 10px;
 }
 
-.active{
-  background-color:  rgb(119, 173, 250);
+.active {
+  background-color: rgb(119, 173, 250);
 }
 
-.active_library{
+.active_library {
   transform: translateX(0);
+}
+
+@media only screen and (max-width: 600px) {
+  .active_library {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(119, 228, 250, 0.984);
+  }
+  .Library-Container {
+    img {
+      width: 20vw;
+    }
+  }
+  .Library{
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 0.8rem;
+  }
+}
+
+.libaray_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
